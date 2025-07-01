@@ -47,5 +47,112 @@
             "time_stamp_utc=\\$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
         ],
         "description": "creates a var for the current time in utc"
-    }
+    },
+    "Create serial number": {
+        "prefix": "z.serial_number",
+        "body": [
+            "serial_number=\\$(system_profiler SPHardwareDataType | grep Serial | cut -d \":\" -f2 | xargs)"
+        ],
+        "description": "creates a var for serial number"
+    },
+    "Create public ip": {
+        "prefix": "z.public_ip",
+        "body": [
+            "public_ip=\\$(dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com | tr -d '\"')"
+        ],
+        "description": "creates a var for public ip address"
+    },
+    "Create hostname": {
+        "prefix": "z.host_name",
+        "body": [
+            "host_name=\\$(uname -n)"
+        ],
+        "description": "creates a var for hostname"
+    },
+    "Create header": {
+        "prefix": "z.header",
+        "body": [
+            "####################################################################################################",
+            "# Name      	: xxx.zsh",                                                                                                                                                 
+            "# Date         : 2025.xx.xx",
+            "# Version      : 0.1.0",                                                                                   
+            "# Author       : xxx",                                             
+            "# Email        : xxx", 
+            "# Description	: xxx",                                    
+            "####################################################################################################"
+            
+        ],
+        "description": "creates a header for a shell script"
+    },
+    "Create logging": {
+        "prefix": "z.log",
+        "body": [
+            "function log_message () {",
+            "   echo '{\"timestamp\": \"'\\${time_stamp_utc}'\", \"hostname\": \"'\\${host_name}'\", \"user\": \"'\\${logged_in_user}'\", \"severity\": \"'\\$1'\", \"message\": \"'\\$2'\"}' | jq -c",
+            "}"
+            
+        ],
+        "description": "creates a logging function"
+    },
+    "Create variable header": {
+        "prefix": "z.variable_header",
+        "body": [
+            "## VARIABLES ---------------------------------------------------------------------------------------"
+        ],
+        "description": "creates a 100 character long header for variables"
+    },
+    "Create functions header": {
+        "prefix": "z.functions_header",
+        "body": [
+            "## FUNCTIONS ---------------------------------------------------------------------------------------"
+        ],
+        "description": "creates a 100 character long header for functions"
+    },
+    "Create commands header": {
+        "prefix": "z.command_header",
+        "body": [
+            "## COMMANDS ----------------------------------------------------------------------------------------"
+        ],
+        "description": "creates a 100 character long header for commands"
+    },
+    "Create test log": {
+        "prefix": "z.test_log",
+        "body": [
+            "log_message Info \"this is a test message to help debug\""
+        ],
+        "description": "creates a test log, requires log_message function"
+    },
+    "Create zsh template": {
+        "prefix": "z.template",
+        "body": [
+            "#!/bin/zsh",
+            "",
+            "",
+            "####################################################################################################",
+            "# Name      	: xxx.zsh",                                                                                                                                                 
+            "# Date         : 2025.xx.xx",
+            "# Version      : 0.1.0",                                                                                   
+            "# Author       : xxx",                                             
+            "# Email        : xxx", 
+            "# Description	: xxx",                                    
+            "####################################################################################################",
+            "",
+            "",
+            "## VARIABLES ---------------------------------------------------------------------------------------",
+            "time_stamp_utc=\\$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")",
+            "logged_in_user=$(scutil <<< \"show State:/Users/ConsoleUser\" | awk '/Name :/ && ! /loginwindow/ { print \\$3 }')",
+            "host_name=\\$(uname -n)",
+            "",
+            "",
+            "## FUNCTIONS ---------------------------------------------------------------------------------------",
+            "function log_message () {",
+            "   echo '{\"timestamp\": \"'\\${time_stamp_utc}'\", \"hostname\": \"'\\${host_name}'\", \"user\": \"'\\${logged_in_user}'\", \"severity\": \"'\\$1'\", \"message\": \"'\\$2'\"}' | jq -c",
+            "}",
+            "",
+            "",
+            "## COMMANDS ----------------------------------------------------------------------------------------",
+            "log_message Info \"this is a test message to help debug\""            
+        ],
+        "description": "creates a template for zsh scripts"
+    },
 }
