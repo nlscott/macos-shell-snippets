@@ -1,0 +1,36 @@
+{
+	"name": "macos-shell-snippets",
+	"displayName": "macOS Shell Snippets",
+	"description": "Snippets for macOS for use with Bash, zsh, and shell",
+	"version": "0.1.0",
+	"publisher": "NicScott",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"snippets",
+		"bash",
+		"shell",
+		"zsh",
+		"macos",
+		"apple",
+		"macadmins"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "shellscript",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"isApplicationScoped": false,
+		"installedTimestamp": 1666238455478,
+		"size": 500150
+	}
+}

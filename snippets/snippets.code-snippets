@@ -1,0 +1,44 @@
+{
+    "Create Logged In User": {
+        "prefix": "z.logged_in_user",
+        "body": [
+            "logged_in_user=$(scutil <<< \"show State:/Users/ConsoleUser\" | awk '/Name :/ && ! /loginwindow/ { print \\$3 }')"
+
+        ],
+        "description": "creates a varible to get the current logged in users name"
+    },
+    "Create If/Else statment": {
+        "prefix": "z.else",
+        "body": [
+            "if [[ command ]];then",
+            "   command",
+            "else",
+            "   commmand",
+            "fi"
+        ],
+        "description": "creates an empty if/else bracket"
+    },
+    "Create If statment": {
+        "prefix": "z.if",
+        "body": [
+            "if [[ xx ]]; then",
+            "   command",
+            "fi"
+        ],
+        "description": "creates an empty if bracket"
+    },
+    "Create Comment Line 80": {
+        "prefix": "z.80",
+        "body": [
+            "#-------------------------------------------------------------------------------"
+        ],
+        "description": "creates a comment break line 80 characters long"
+    },
+    "Create Comment Line 100": {
+        "prefix": "z.100",
+        "body": [
+            "#---------------------------------------------------------------------------------------------------"
+        ],
+        "description": "creates a comment break line 100 characters long"
+    }
+}
