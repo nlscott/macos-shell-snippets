@@ -2,7 +2,7 @@
 
 ## Summary:
 
-Helpful shell snippets for macOS
+VS Code snippets for some helpful shell snippets for macOS
 
 
 

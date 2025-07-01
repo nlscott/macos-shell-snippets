@@ -40,5 +40,12 @@
             "#---------------------------------------------------------------------------------------------------"
         ],
         "description": "creates a comment break line 100 characters long"
+    },
+    "Create utc timestamp": {
+        "prefix": "z.timestamp_utc",
+        "body": [
+            "time_stamp_utc=\\$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
+        ],
+        "description": "creates a var for the current time in utc"
     }
 }
