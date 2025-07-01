@@ -32,5 +32,10 @@
 		"isApplicationScoped": false,
 		"installedTimestamp": 1666238455478,
 		"size": 500150
-	}
+	},
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/nlscott/macos-shell-snippets"
+  	},
+  	"homepage": "https://github.com/nlscott/macos-shell-snippets"
 }
