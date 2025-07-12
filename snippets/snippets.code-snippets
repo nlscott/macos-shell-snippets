@@ -155,4 +155,13 @@
         ],
         "description": "creates a template for zsh scripts"
     },
+    "Create function": {
+        "prefix": "z.function",
+        "body": [
+            "function function_name () {",
+            "   # commands",
+            "}"
+        ],
+        "description": "creates a bash function"
+    },
 }

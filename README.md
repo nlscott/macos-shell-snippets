@@ -6,6 +6,10 @@ VS Code extension for some helpful shell snippets for macOS
 
 
 
+<video src="images/macos-shell-snippets.mov"></video>
+
+
+
 ---
 ## Commands:
 
@@ -181,6 +185,15 @@ fi
 
 ```bash
 #---------------------------------------------------------------------------------------------------
+```
+
+---
+ `z.function`: Creates an empty function
+
+```bash
+    function function_name {
+        # commands
+    }
 ```
 
 
