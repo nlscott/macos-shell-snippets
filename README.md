@@ -6,7 +6,7 @@ VS Code extension for some helpful shell snippets for macOS
 
 
 
-<video src="images/macos-shell-snippets.mov"></video>
+<video src="/images/macos-shell-snippets.mov"></video>
 
 
 
