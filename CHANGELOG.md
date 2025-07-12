@@ -1,6 +1,11 @@
 # Change Log
 
+Version 0.2.2
+
+- Add: `z.epoch`
+
 Version 0.2.1
+
 - Add: `z.function`
 
 

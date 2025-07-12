@@ -164,4 +164,13 @@
         ],
         "description": "creates a bash function"
     },
+    "Create epoch": {
+        "prefix": "z.epoch",
+        "body": [
+            "time_stamp_epoch=\\$(date +%s)"
+        ],
+        "description": "creates a var for epoch time"
+    },
 }
+
+

@@ -2,7 +2,7 @@
 	"name": "macos-shell-snippets",
 	"displayName": "macOS Shell Snippets",
 	"description": "Snippets for macOS for use with Bash, zsh, and shell",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"publisher": "NicScott",
 	"icon": "images/icon.png",
 	"engines": {

@@ -198,6 +198,13 @@ fi
     }
 ```
 
+---
+ `z.epoch`: Creates a var for epoch time
+
+```bash
+time_stamp_epoch=$(date +%s)
+```
+
 
 
 
