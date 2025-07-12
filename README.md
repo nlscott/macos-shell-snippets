@@ -6,7 +6,9 @@ VS Code extension for some helpful shell snippets for macOS
 
 
 
-![macos-shell-snippets](https://github.com/nlscott/macos-shell-snippets/blob/main/images/icon.png/macos-shell-snippets.gif)
+![macos-shell-snippets](https://github.com/nlscott/macos-shell-snippets/blob/main/images/macos-shell-snippets.gif)
+
+
 
 
 
