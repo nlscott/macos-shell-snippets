@@ -73,12 +73,12 @@
         "prefix": "z.header",
         "body": [
             "####################################################################################################",
-            "# Name      	: xxx.zsh",                                                                                                                                                 
+            "# Name         : xxx.zsh",                                                                                                                                                 
             "# Date         : 2025.xx.xx",
             "# Version      : 0.1.0",                                                                                   
             "# Author       : xxx",                                             
             "# Email        : xxx", 
-            "# Description	: xxx",                                    
+            "# Description  : xxx",                                    
             "####################################################################################################"
             
         ],
@@ -125,16 +125,16 @@
     "Create zsh template": {
         "prefix": "z.template",
         "body": [
-            "#!/bin/zsh",
+            "#!/usr/bin/env zsh",
             "",
             "",
             "####################################################################################################",
-            "# Name      	: xxx.zsh",                                                                                                                                                 
+            "# Name         : xxx.zsh",                                                                                                                                                 
             "# Date         : 2025.xx.xx",
             "# Version      : 0.1.0",                                                                                   
             "# Author       : xxx",                                             
             "# Email        : xxx", 
-            "# Description	: xxx",                                    
+            "# Description  : xxx",                                    
             "####################################################################################################",
             "",
             "",
@@ -170,6 +170,13 @@
             "time_stamp_epoch=\\$(date +%s)"
         ],
         "description": "creates a var for epoch time"
+    },
+    "Create epoch": {
+        "prefix": "z.shebang",
+        "body": [
+            "#!/usr/bin/env zsh"
+        ],
+        "description": "creates a shebang for zsh"
     },
 }
 

@@ -1,5 +1,12 @@
 # Change Log
 
+Version 0.2.3
+
+- Add: `z.shebang`
+- Update: syntax for `z.header`
+- Update: syntax for `z.template` update to use environment zsh
+
+
 Version 0.2.2
 
 - Add: `z.epoch`
